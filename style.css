@@ -254,6 +254,41 @@ canvas {
   /* box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; */
 }
 
+.explore {
+    width: 100%;
+    height: 8vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: fixed;
+    /* top: 85%; */
+    /* bottom: 92px; */
+    top:57%;
+      z-index: 10000;
+      animation: moveUpDownText 2s ease-in-out infinite;
+  }
+  
+  /* 0.1 Preorder button */
+  .explore span {
+      text-decoration: none !important;
+      color: white;
+      font-family: "Poppins", sans-serif;
+      color: #183457;;
+      font-size: 18px;
+    }
+  
+    @keyframes moveUpDownText {
+      0%,
+      100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-5px);
+      }
+    }
+  
+
 /* MOBILE ***************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************** */
 
 /* Parent Container */

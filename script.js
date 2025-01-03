@@ -164,6 +164,27 @@ tl_product_ingredient.from(".ingrdient-card", {
   },
 });
 
+
+gsap.from(".pre-order", {
+    opacity: 0,
+    scrollTrigger: {
+      trigger: ".product-image ",
+      start: "top 80%",
+      end: "top 50%",
+      scrub: 1,
+    },
+  });
+
+gsap.to(".explore", {
+  opacity: 0,
+  scrollTrigger: {
+    trigger: ".product-image ",
+    start: "top 100%",
+    end: "top 99%",
+    scrub: 1,
+  },
+});
+
 // gsap.to(".pre-order", {
 //   opacity: 0,
 //   zIndex: -1,
