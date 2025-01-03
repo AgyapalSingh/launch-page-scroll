@@ -37,6 +37,36 @@
   }
 }
 
+
+
+
+
+
+.loader-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#loader {
+  border: 12px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 12px solid #444444;
+  width: 70px;
+  height: 70px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+
+
 /* DESKTOP ***************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************** */
 
 /* Parent Container */
@@ -165,7 +195,21 @@ canvas {
   flex-direction: row;
   flex-wrap: wrap;
   padding-bottom: 2vh;
-  justify-content: center;
+  /* justify-content: center; */
+  flex-wrap: nowrap;
+  overflow: auto;
+  scroll-behavior: smooth;
+}
+
+.product-ingredients::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+    background-color: #aaaaaa00; 
+}
+
+.product-ingredients::-webkit-scrollbar-thumb {
+    background-color: #bfbdbb62;
+    border-radius: 10px;
 }
 
 /* 3.1 Ingredient Card */
@@ -174,6 +218,7 @@ canvas {
   align-items: center;
   flex-direction: column;
   font-family: "Poppins", sans-serif;
+  min-width: 300px;
 }
 
 /* 3.1.1 Ingredient card Image */

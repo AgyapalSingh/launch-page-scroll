@@ -1,5 +1,21 @@
 //  MAnual JS for Launch Page - AgyaAujla
 
+
+
+
+document.onreadystatechange = function () {
+    if (document.readyState !== "complete") {
+      document.querySelector(".launch-page-container").style.visibility =
+        "hidden";
+      document.querySelector(".loader-container").style.visibility =
+        "visible";
+    } else {
+      document.querySelector(".loader-container").style.display = "none";
+      document.querySelector(".launch-page-container").style.visibility =
+        "visible";
+    }
+  };
+
 // DESKTOP       ===================================================================================================================================================
 
 var tl_product_title = gsap.timeline();
@@ -302,7 +318,7 @@ function loadImage_m(index) {
     canvas_m.height = window.innerHeight / 1.8;
     const scaleX_m = canvas_m.width / img_m.width;
     const scaleY_m = canvas_m.height / img_m.height;
-    const scale_m = 0.3;
+    const scale_m = 0.4;
     const newWidth_m = img_m.width * scale_m;
     const newHeight_m = img_m.height * scale_m;
     const offsetX_m = (canvas_m.width - newWidth_m) / 2;
