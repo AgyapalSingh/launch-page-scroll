@@ -5,10 +5,10 @@
 
 document.onreadystatechange = function () {
     if (document.readyState !== "complete") {
+        document.querySelector(".loader-container").style.visibility =
+        "visible";
       document.querySelector(".launch-page-container").style.visibility =
         "hidden";
-      document.querySelector(".loader-container").style.visibility =
-        "visible";
     } else {
       document.querySelector(".loader-container").style.display = "none";
       document.querySelector(".launch-page-container").style.visibility =
