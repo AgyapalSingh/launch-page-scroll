@@ -14,7 +14,21 @@ document.onreadystatechange = function () {
       document.querySelector(".launch-page-container").style.visibility =
         "visible";
     }
+
+    if (document.readyState !== "complete") {
+        document.querySelector(".launch-page-container_m").style.visibility =
+          "hidden";
+        document.querySelector(".loader-container").style.visibility =
+          "visible";
+      } else {
+        document.querySelector(".loader-container").style.display = "none";
+        document.querySelector(".launch-page-container_m").style.visibility =
+          "visible";
+      }
   };
+
+
+
 
 // DESKTOP       ===================================================================================================================================================
 
