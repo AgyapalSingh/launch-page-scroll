@@ -339,6 +339,11 @@ canvas {
   }
 }
 
+
+.products-results{
+  height: 100vh;
+}
+
 /* MOBILE ***************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************** */
 
 /* Parent Container */
@@ -685,6 +690,7 @@ canvas {
   align-items: center;
   justify-content: center;
   font-family: "Poppins", sans-serif;
+  margin-top: 60px
   /* border: 1px solid red; */
 }
 .card-wrapper {
@@ -759,6 +765,11 @@ canvas {
   font-size: 14px;
   color: rgb(71, 71, 71);
 }
+
+.swiper-button-next::after,
+    .swiper-button-prev::after {
+      font-size: 30px; /* Adjust arrow icon size */
+    }
 /* @media (max-width: 768px) {
   .card-wrapper {
     margin: 0 10px 25px;
