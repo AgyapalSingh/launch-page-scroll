@@ -673,18 +673,18 @@ canvas {
     margin-top: 60px !important;
   }
 }
-
 .product-ingredients {
   display: flex;
   align-items: center;
   justify-content: center;
   font-family: "Poppins", sans-serif;
+  /* border: 1px solid red; */
 }
 .card-wrapper {
   max-width: 1100px;
   margin: 0 60px 35px;
-  /* padding: 20px 10px; */
   overflow: hidden;
+  /* border: 1px solid red; */
 }
 .card-list .card-item {
   list-style: none;
@@ -693,72 +693,13 @@ canvas {
   display: flex;
   align-items: center;
   flex-direction: column;
-  padding: 18px;
   user-select: none;
   border-radius: 12px;
   text-decoration: none;
   border: 2px solid transparent;
-  /* box-shadow: 0 10px 10px rgba(0, 0, 0, 0.05); */
   transition: 0.2s ease;
-}
-.card-list .card-item .card-link:active {
-  cursor: grabbing;
-}
-/* .card-list .card-item .card-link:hover {
-  border-color: #183457;
-} */
-.card-list .card-link .card-image {
-  width: 100%;
-  border-radius: 10px;
-  aspect-ratio: 16 / 9;
-  object-fit: cover;
-}
-.card-list .card-link .badge {
-  color: #183457;
-  width: fit-content;
-  padding: 8px 16px;
-  font-size: 0.95rem;
-  border-radius: 50px;
-  font-weight: 500;
-  background: #dde4ff;
-  margin: 16px 0 18px;
-}
-.card-list .card-link .badge-designer {
-  color: #b22485;
-  background: #f7dff5;
-}
-.card-list .card-link .badge-marketer {
-  color: #b25a2b;
-  background: #ffe3d2;
-}
-.card-list .card-link .badge-gamer {
-  color: #205c20;
-  background: #d6f8d6;
-}
-.card-list .card-link .badge-editor {
-  color: #856404;
-  background: #fff3cd;
-}
-.card-list .card-link .card-title {
-  color: #000;
-  font-size: 1.19rem;
-  font-weight: 600;
-}
-.card-list .card-link .card-button {
-  height: 35px;
-  width: 35px;
-  color: #183457;
-  margin: 30px 0 5px;
-  background: none;
-  cursor: pointer;
-  border-radius: 50%;
-  border: 2px solid #183457;
-  transform: rotate(-45deg);
-  transition: 0.4s ease;
-}
-.card-list .card-link:hover .card-button {
-  color: #fff;
-  background: #183457;
+  /* border: 1px solid rgb(255, 1, 1); */
+  /* width: 300px; */
 }
 .card-wrapper .swiper-pagination-bullet {
   height: 13px;
@@ -773,14 +714,16 @@ canvas {
   color: #183457;
   margin-top: -35px;
 }
-
 .card-image {
   width: 300px;
+  height: 200px;
   animation: moveUpDown 2s ease-in-out infinite;
   display: block;
-  /* margin: 0 auto; */
-  /* border: 2px solid rgb(245, 245, 245); */
   border-radius: 5px;
+  /* border: 1px solid #183457; */
+  padding-top: 5px;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
 }
 
 @keyframes moveUpDown {
@@ -792,11 +735,9 @@ canvas {
     transform: translateY(-2px);
   }
 }
-
 .card-image:hover {
   animation: none;
 }
-/* 3.1.2 Ingredient Name */
 .ingredient-name {
   text-transform: uppercase;
   margin-bottom: 10px;
@@ -805,16 +746,12 @@ canvas {
   font-size: 14px;
   color: #183457;
 }
-
-/* 3.1.2 Ingredient Indo */
 .ingredient-info {
   margin-bottom: 10px;
   text-align: center;
   font-size: 14px;
   color: rgb(71, 71, 71);
 }
-
-/* Responsive media query code for small screens */
 /* @media (max-width: 768px) {
   .card-wrapper {
     margin: 0 10px 25px;

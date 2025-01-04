@@ -460,6 +460,10 @@ gsap.to(".explore_m", {
 new Swiper('.card-wrapper', {
   loop: true,
   spaceBetween: 30,
+  autoplay: {
+      delay: 2000,
+      disableOnInteraction: false,
+    },
 
   // Pagination bullets
   pagination: {
