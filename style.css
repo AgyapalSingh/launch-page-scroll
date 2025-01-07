@@ -363,7 +363,7 @@ canvas {
 .product-title_m {
   height: 100dvh;
   overflow: hidden;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 /* 1.1 Animated Tittle */
