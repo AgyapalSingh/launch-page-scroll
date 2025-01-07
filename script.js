@@ -212,6 +212,7 @@ tl_product_ingredient.from(".ingrdient-card", {
 
 gsap.from(".pre-order", {
     opacity: 0,
+    zIndex: -1,
     scrollTrigger: {
       trigger: ".product-image ",
       start: "top 80%",
@@ -222,6 +223,7 @@ gsap.from(".pre-order", {
 
 gsap.to(".explore", {
   opacity: 0,
+  zIndex: -1,
   scrollTrigger: {
     trigger: ".product-image ",
     start: "top 100%",
@@ -424,6 +426,7 @@ tl_product_ingredient_m.from(".ingrdient-card_m", {
 
 gsap.from(".pre-order_m", {
   opacity: 0,
+  zIndex: -1,
   scrollTrigger: {
     trigger: ".product-image_m ",
     start: "top 80%",
@@ -434,6 +437,7 @@ gsap.from(".pre-order_m", {
 
 gsap.to(".explore_m", {
   opacity: 0,
+  zIndex: -1,
   scrollTrigger: {
     trigger: ".product-image_m ",
     start: "top 100%",
