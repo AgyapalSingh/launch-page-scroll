@@ -26,24 +26,6 @@
   }
 } */
 
-
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-@media screen and (max-width: 1024px) {
-  .launch-page-container {
-    display: none;
-  }
-}
-@media screen and (min-width: 1025px) {
-  .launch-page-container_m {
-    display: none;
-  }
-}
-
 .loader-container {
   height: 50vh;
   display: flex;
@@ -67,6 +49,23 @@
   margin-top: 20px;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 1024px) {
+  .launch-page-container {
+    display: none;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .launch-page-container_m {
+    display: none;
+  }
+}
+
 @keyframes spin {
   100% {
     transform: rotate(360deg);
@@ -77,11 +76,6 @@
 
 /* Parent Container */
 .launch-page-container {
-  /* background-image: url(https://cdn.shopify.com/s/files/1/0589/0192/1956/files/Body-butter-bg.jpg?v=1734950195); */
-  /* background-image: url(https://cdn.shopify.com/s/files/1/0589/0192/1956/files/BG.jpg?v=1735877797); */
-
-  background-image: url(https://cdn.shopify.com/s/files/1/0589/0192/1956/files/Color-01.png?v=1735888470);
-  background-image: url(https://cdn.shopify.com/s/files/1/0589/0192/1956/files/Color-02.png?v=1735888470);
   background-image: url(https://cdn.shopify.com/s/files/1/0589/0192/1956/files/Color-03.png?v=1735888470);
   background-size: cover;
   background-repeat: no-repeat;
@@ -94,7 +88,6 @@
 .product-title {
   height: 100vh;
   overflow: hidden;
-  /* border: 1px solid red; */
 }
 
 /* Animated Tittle */
@@ -110,7 +103,6 @@
   font-size: 15vh;
   transition: font-size 0.3s ease;
   color: #183457;
-  /* border: 1px solid red; */
 }
 
 /* 2. Product Image and Benefits */
@@ -118,23 +110,18 @@
   height: 100vh;
   display: flex;
   flex-direction: row;
-  /* justify-content: center;
-    align-items: center; */
-  /* border: 1px solid rgb(0, 255, 34); */
 }
 
 /* 2.1 Left Benefits */
 .product-benefits-left {
   width: 25%;
   text-align: right;
-  /* border: 1px solid rgb(47, 0, 255); */
   height: 50vh;
   position: sticky;
   top: 30%;
   align-items: center;
   display: flex;
   justify-content: end;
-  /* flex-direction: column; */
 }
 
 .title_product_benefit_d {
@@ -145,7 +132,6 @@
 /* 2.2 Right Benefits */
 .product-benefits-right {
   width: 25%;
-  /* border: 1px solid rgb(255, 0, 221); */
   height: 50vh;
   position: sticky;
   top: 30%;
@@ -171,7 +157,6 @@
   justify-content: center;
   align-items: center;
   position: sticky;
-  /* border: 1px solid red; */
   top: 30%;
   height: 50vh;
   animation: moveUpDownBig 3s ease-in-out infinite;
@@ -201,7 +186,6 @@ canvas {
   flex-direction: row;
   flex-wrap: wrap;
   padding-bottom: 2vh;
-  /* justify-content: center; */
   flex-wrap: nowrap;
   overflow: auto;
   scroll-behavior: smooth;
@@ -232,8 +216,6 @@ canvas {
   width: 300px;
   animation: moveUpDown 2s ease-in-out infinite;
   display: block;
-  /* margin: 0 auto; */
-  /* border: 2px solid rgb(245, 245, 245); */
   border-radius: 5px;
 }
 
@@ -268,14 +250,6 @@ canvas {
   color: rgb(71, 71, 71);
 }
 
-/* .products-results {
-    height: 100vh;
-  }
-  
-  .related-products {
-    height: 100vh;
-  } */
-
 /* 0. Pre-Order Div */
 .pre-order {
   width: 100%;
@@ -284,7 +258,6 @@ canvas {
   justify-content: center;
   align-items: center;
   position: fixed;
-  /* top: 85%; */
   right: 0%;
   bottom: 94px;
   z-index: 10000;
@@ -299,10 +272,7 @@ canvas {
   text-transform: uppercase;
   border-radius: 3px 3px 3px 3px;
   font-family: "Poppins", sans-serif;
-  /* background-color: white; */
-  /* color: #183457; */
   color: white;
-  /* box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; */
 }
 
 .explore {
@@ -313,8 +283,6 @@ canvas {
   align-items: center;
   flex-direction: column;
   position: fixed;
-  /* top: 85%; */
-  /* bottom: 92px; */
   top: 57%;
   z-index: 10000;
   animation: moveUpDownText 2s ease-in-out infinite;
@@ -339,8 +307,7 @@ canvas {
   }
 }
 
-
-.products-results{
+.products-results {
   height: 100vh;
 }
 
@@ -348,9 +315,6 @@ canvas {
 
 /* Parent Container */
 .launch-page-container_m {
-  /* background-image: url(https://cdn.shopify.com/s/files/1/0589/0192/1956/files/Body-butter-bg.jpg?v=1734950195); */
-  background-image: url(https://cdn.shopify.com/s/files/1/0589/0192/1956/files/Color-01.png?v=1735888470);
-  background-image: url(https://cdn.shopify.com/s/files/1/0589/0192/1956/files/Color-02.png?v=1735888470);
   background-image: url(https://cdn.shopify.com/s/files/1/0589/0192/1956/files/Color-03.png?v=1735888470);
   background-size: cover;
   background-repeat: no-repeat;
@@ -363,7 +327,6 @@ canvas {
 .product-title_m {
   height: 100dvh;
   overflow: hidden;
-  /* border: 1px solid red; */
 }
 
 /* 1.1 Animated Tittle */
@@ -395,7 +358,6 @@ canvas {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* border: 1px solid rgb(255, 3, 3); */
   position: sticky;
   top: 10%;
 }
@@ -410,7 +372,6 @@ canvas {
 
 /* 2 Product Benefits List */
 .product-benefits-right_m {
-  /* border: 1px solid green; */
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -428,17 +389,7 @@ canvas {
   font-family: "Poppins", sans-serif;
   color: #183457;
   font-size: 18px;
-  /* border: 1px solid red; */
 }
-
-/* .product-ingredients_m {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    padding-bottom: 2vh;
-    overflow: auto;
-    scroll-behavior: smooth;
-  } */
 
 /* 3. Product Ingredients Div */
 .product-ingredients_m {
@@ -451,7 +402,6 @@ canvas {
   padding-bottom: 2vh;
   overflow: auto;
   scroll-behavior: smooth;
-  /* border: 1px solid red; */
 }
 
 .ingrdient-card_m {
@@ -459,9 +409,7 @@ canvas {
   align-items: center;
   flex-direction: column;
   font-family: "Poppins", sans-serif;
-  /* margin-top: 50px; */
   min-width: 300px;
-  /* border: 1px solid rgb(245, 245, 245); */
 }
 
 /* 3.1 Ingredient Card */
@@ -487,8 +435,6 @@ canvas {
   height: 250px;
   animation: moveUpDown 2s ease-in-out infinite;
   display: block;
-  /* margin: 0 auto; */
-  /* margin: 0px 100px; */
 }
 
 @keyframes moveUpDown {
@@ -519,14 +465,6 @@ canvas {
   color: rgb(51, 51, 51);
 }
 
-/* .products-results_m {
-    height: 100vh;
-  }
-  
-  .related-products_m {
-    height: 100vh;
-  } */
-
 /* 0. Pre-Order Div */
 .pre-order_m {
   width: 100%;
@@ -535,7 +473,6 @@ canvas {
   justify-content: center;
   align-items: center;
   position: fixed;
-  /* top: 85%; */
   bottom: 92px;
   z-index: 10000;
 }
@@ -549,11 +486,8 @@ canvas {
   text-transform: uppercase;
   border-radius: 3px 3px 3px 3px;
   font-family: "Poppins", sans-serif;
-  /* background-color: white; */
-  /* color: #183457; */
   color: white;
   font-size: 12px;
-  /* box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; */
 }
 
 .explore_m {
@@ -564,8 +498,6 @@ canvas {
   align-items: center;
   flex-direction: column;
   position: fixed;
-  /* top: 85%; */
-  /* bottom: 92px; */
   top: 55%;
   z-index: 10000;
   animation: moveUpDownText 2s ease-in-out infinite;
@@ -596,7 +528,6 @@ canvas {
   display: flex;
   justify-content: center;
   align-items: center;
-
   margin-bottom: 50px !important;
   z-index: 10000;
 }
@@ -608,8 +539,6 @@ canvas {
   text-transform: uppercase;
   border-radius: 3px 3px 3px 3px;
   font-family: "Poppins", sans-serif;
-  /* background-color: white; */
-  /* color: #183457; */
   color: white;
   font-size: 12px;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
@@ -632,8 +561,6 @@ canvas {
     text-transform: uppercase;
     border-radius: 3px 3px 3px 3px;
     font-family: "Poppins", sans-serif;
-    /* background-color: white; */
-    /* color: #183457; */
     color: white;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     font-size: 15px;
@@ -659,7 +586,6 @@ canvas {
 @media (max-width: 768px) {
   .clean {
     display: flex;
-    /* justify-content: flex-start;  */
     align-items: center;
   }
 
@@ -689,14 +615,12 @@ canvas {
   align-items: center;
   justify-content: center;
   font-family: "Poppins", sans-serif;
-  margin-top: 60px
-  /* border: 1px solid red; */
+  margin-top: 60px;
 }
 .card-wrapper {
   max-width: 1100px;
   margin: 0 60px 35px;
   overflow: hidden;
-  /* border: 1px solid red; */
 }
 .card-list .card-item {
   list-style: none;
@@ -710,8 +634,6 @@ canvas {
   text-decoration: none;
   border: 2px solid transparent;
   transition: 0.2s ease;
-  /* border: 1px solid rgb(255, 1, 1); */
-  /* width: 300px; */
 }
 .card-wrapper .swiper-pagination-bullet {
   height: 13px;
@@ -732,7 +654,6 @@ canvas {
   animation: moveUpDown 2s ease-in-out infinite;
   display: block;
   border-radius: 5px;
-  /* border: 1px solid #183457; */
   padding-top: 5px;
   aspect-ratio: 16 / 9;
   object-fit: cover;
@@ -766,14 +687,33 @@ canvas {
 }
 
 .swiper-button-next::after,
-    .swiper-button-prev::after {
-      font-size: 30px; /* Adjust arrow icon size */
-    }
-/* @media (max-width: 768px) {
-  .card-wrapper {
-    margin: 0 10px 25px;
-  }
-  .card-wrapper .swiper-slide-button {
+.swiper-button-prev::after {
+  font-size: 30px; 
+}
+
+
+
+@media only screen and (min-width: 769px) {
+  .div_1_M {
     display: none;
   }
-} */
+}
+@media only screen and (max-width: 768px) {
+  .div_1 {
+    display: none;
+  }
+}
+
+
+
+
+.clean_m h2 {
+  margin-top: 40px;
+}
+.in-cont-ing {
+  margin-top: 30px;
+}
+.in-cont {
+  margin-top: 70px;
+  padding-bottom: 40px;
+}

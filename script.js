@@ -3,30 +3,45 @@
 
 
 
-document.onreadystatechange = function () {
+// document.onreadystatechange = function () {
+//     if (document.readyState !== "complete") {
+//         document.querySelector(".loader-container").style.visibility =
+//         "visible";
+//       document.querySelector(".launch-page-container").style.visibility =
+//         "hidden";
+//     } else {
+//       document.querySelector(".loader-container").style.display = "none";
+//       document.querySelector(".launch-page-container").style.visibility =
+//         "visible";
+//     }
+
+//     if (document.readyState !== "complete") {
+//         document.querySelector(".launch-page-container_m").style.visibility =
+//           "hidden";
+//         document.querySelector(".loader-container").style.visibility =
+//           "visible";
+//       } else {
+//         document.querySelector(".loader-container").style.display = "none";
+//         document.querySelector(".launch-page-container_m").style.visibility =
+//           "visible";
+//       }
+//   };
+
+
+  document.onreadystatechange = function () {
     if (document.readyState !== "complete") {
-        document.querySelector(".loader-container").style.visibility =
-        "visible";
-      document.querySelector(".launch-page-container").style.visibility =
-        "hidden";
+      // Show loader and hide launch pages
+      document.querySelector(".loader-container").style.visibility = "visible";
+      document.querySelector(".launch-page-container").style.visibility = "hidden";
+      document.querySelector(".launch-page-container_m").style.visibility = "hidden";
     } else {
+      // Hide loader and show launch pages
       document.querySelector(".loader-container").style.display = "none";
-      document.querySelector(".launch-page-container").style.visibility =
-        "visible";
+      document.querySelector(".launch-page-container").style.visibility = "visible";
+      document.querySelector(".launch-page-container_m").style.visibility = "visible";
     }
-
-    if (document.readyState !== "complete") {
-        document.querySelector(".launch-page-container_m").style.visibility =
-          "hidden";
-        document.querySelector(".loader-container").style.visibility =
-          "visible";
-      } else {
-        document.querySelector(".loader-container").style.display = "none";
-        document.querySelector(".launch-page-container_m").style.visibility =
-          "visible";
-      }
   };
-
+  
 
 
 
